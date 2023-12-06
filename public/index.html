@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+    <style>
+        body{
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+.container{
+    height:100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:0.5fr 1.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-gap:0.2rem;
+    padding: 10px;
+    margin: 20px;
+    grid-template-areas: 
+    "header header header header"
+    "profileimage profile profile profile"
+    "summaryimage summary summary summary"
+    "workimage workexperience workexperience workexperience "
+    "educationimage education education education"
+    "skillsimage skills skills skills"
+    "achievementsimage achievements achievements achievements"
+    "blogsimage blogs blogs blogs"
+    "intrestsimage intrests intrests intrests"
+    "footer footer footer footer";
+}
+:target {
+    border: 2px solid #D4D4D4;
+    background-color: rgb(23, 75, 127);
+    color:whitesmoke;
+}
+header a,footer a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    padding:10px;
+    text-align: center;
+}
+header{
+    grid-area: header;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    padding: 5px;
+}
+#profile{
+    grid-area: profile;
+    background-color: #BBC8CA;
+    padding: 10px;
+}
+#profileimage{
+    grid-area: profileimage;
+    background-color: #C7FFED;
+}
+#summaryimage{
+    grid-area: summaryimage;
+    background-color: #C7FFED;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px; 
+}
+#summary{
+    grid-area: summary;
+    background-color: #BBC8CA;
+}
+#workimage{
+    grid-area: workimage;
+    background-color: #C7FFED;
+}
+#workexperience{
+    grid-area: workexperience;
+    background-color: #BBC8CA;
+}
+#educationimage{
+    grid-area: educationimage;
+    background-color: #C7FFED;
+}
+#education{
+    grid-area: education;
+    background-color: #BBC8CA;
+}
+#skillsimage{
+    grid-area: skillsimage;
+    background-color: #C7FFED;
+}
+#skills{
+    grid-area: skills;
+    background-color: #BBC8CA;
+}
+#achievementsimage{
+    grid-area: achievementsimage;
+    background-color: #C7FFED;
+}
+#achievements{
+    grid-area: achievements;
+    background-color: #BBC8CA;
+}
+#blogsimage{
+    grid-area: blogsimage;
+    background-color: #C7FFED;
+}
+#blogs{
+    grid-area: blogs;
+    background-color: #BBC8CA;
+}
+#intrestsimage{
+    grid-area: intrestsimage;
+    background-color: #C7FFED;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px; 
+}
+#intrests{
+    grid-area: intrests;
+    background-color: #BBC8CA;
+}
+footer{
+    grid-area: footer;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    font-size: large;
+    padding: 5px;
+}
+
+.image img{
+    height: 180px;
+    width: 200px;
+    margin: auto;
+    padding: 5px;
+}
+img{
+    height : 100px;
+    width : 100px;
+    padding: 10px;
+
+}
+.school{
+    display: inline-block;
+    padding: 20px;
+}
+.topnav .icon {
+    display: none;
+}
+
+@media only screen and (max-width:500px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 0px;
+        margin: 0px;
+        grid-template-areas: 
+        "header header"
+        "profileimage profile "
+        "summaryimage summary "
+        "workimage workexperience "
+        "educationimage education "  
+        "skillsimage skills "
+        "achievementsimage achievements "
+        "blogsimage blogs "
+        "intrestsimage intrests "
+        "footer footer ";
+   }
+   
+    .school{
+        display: block;
+        padding: 5px;
+    }
+    img{
+        margin: 20px; 
+    }
+    header,footer{
+        font-size: xx-small;
+    }
+    .image img{
+        padding: 10px;
+    }
+    header a:not(:first-child) {display: none;}
+    header a{
+        float: left;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="topnav" id="Mytopnav">
+            <a href="#home" class="active">HOME</a>   
+            <a href="#profile">PROFILE</a>
+            <a href="#summary">SUMMARY</a>
+            <a href="#workexperience">WORKEXPERIENCE</a>
+            <a href="#education">EDUCATION</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#achievements">ACHIEVEMENTS</a>
+            <a href="#blogs">BLOGS</a>
+            <a href="#intrests">INTERESTS</a>
+            <a href="footer">FOOTER</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+           
+        </header>
+
+        <div class="image" id="profileimage">
+            <img src="https://media.istockphoto.com/id/1318482009/photo/young-woman-ready-for-job-business-concept.jpg?s=2048x2048&w=is&k=20&c=YM7OKsWWH5G0sa1_cpJ0lHwSzQfWVAiMbTMPR0mcohs=" alt="ProfilePhoto" >
+        </div>
+        <div id="profile">
+            <div class="block" id="info">
+                <h1>Sailaxmi Kalwa</h1>
+                <h3>+1 (203)-568-8999</h3>
+                <h3>kalwasailaxmi988@gmail.com</h3>
+            </div>
+        </div>
+
+        <div id="summaryimage">
+            <h2>Summary</h2>
+        </div>
+        <div id="summary">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. aliquam voluptas non adipisci? Quia voluptatibus dolore magnam dolorem doloribus accusantium, facere suscipit?</p>
+        </div>
+
+        <div id="workimage">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoSEv0PaQnFux67LXI_fJJ6I699iyaSscCog&usqp=CAU" alt="work">
+        </div>
+        <div id="workexperience">
+            <p style="font-weight: bold;">Abc company (2015-2017)</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing  Ill0.</p>
+        </div>
+
+        <div id="educationimage">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq-EIBbLOsg326QCHhtlAPRHxPAbFB3uE0kl5og6KcBkGg7XG0WqfEoVGzHRudWgOFQBc&usqp=CAU" alt="education">
+        </div>
+        <div id="education">
+            <div class="school">
+                <p style="font-weight: bold;">Abcd University (2015-2017)</p>
+                <p>grade - 3.86 GPA</p>
+            </div>
+            <div class="school">
+                <p style="font-weight: bold;">Abcd University (2015-2017)</p>
+                <p>grade - 3.86 GPA</p>
+            </div>
+        </div>
+
+        <div id="skillsimage">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUAs9UWUmSTp_yqgZa6HQAdP9wmlOWXnioSQ&usqp=CAU" alt="">
+        </div>
+        <div id="skills">
+            <div class="school">
+                <p>Abcd </p>
+                <p>Avcdf</p>  
+            </div>
+            <div class="school">
+                <p>Abcd </p>
+                <p>Avcdf</p>  
+            </div>
+        </div>
+
+        <div id="achievementsimage">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTin99_pTlO6ucfle4CPw9luRNWlfV4rmT1ZA&usqp=CAU" alt="">
+        </div>
+        <div id="achievements">
+            <div class="school">
+                <p style="font-weight: bold;">Abcd project</p>
+                <p>Technologies</p>
+                
+            </div>
+            <div class="school">
+                <p style="font-weight: bold;">Abcd project</p>
+                <p>Technologies</p>
+                
+            </div>
+        </div>
+
+        <div id="blogsimage">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwFC3BYC2zU71kyMucJyUCYhTdHY_pnu5ccQ&usqp=CAU" alt="">
+        </div>
+        <div id="blogs">
+            <p style="font-weight: bold;">Title</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div id="intrestsimage">
+           <h2>Interests</h2>
+        </div>
+        <div id="intrests">
+            <p>Abcd </p>
+            <p>Avcdf</p>
+        </div>
+
+        <footer>
+            <a href="www.LinkedIn.com">LinkedIn</a>
+            <a href="www.twitter.com">Twitter</a>
+            <a href="www.GitHub">GitHub</a>
+            <a href="header">Header</a>
+        </footer>
+
+    </div>
+
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("Mytopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

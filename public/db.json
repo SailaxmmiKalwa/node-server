@@ -1,0 +1,42 @@
+[
+  {
+  "id" : 0,
+  "CompanyName":"Walmart",
+  "IndustryType": "Retail",
+  "RevenueInUSD": "$611,289",
+  "Employees": "2,100,000",
+  "Headquarters":"United States"
+},
+{
+  "id" : 1,
+  "CompanyName":"Saudi Aramco",
+  "IndustryType": "Oil and gas",
+  "RevenueInUSD": "$603,651",
+  "Employees": "70,496",
+  "Headquarters":"Saudi Arabia"
+},
+{
+  "id" : 2,
+  "CompanyName":"State grid Corp. of China",
+  "IndustryType": "Electricity",
+  "RevenueInUSD": "$530,009",
+  "Employees": "870,287",
+  "Headquarters":"China"
+},
+{
+  "id" : 3,
+  "CompanyName":"Amazon",
+  "IndustryType": "Retail",
+  "RevenueInUSD": "$513,983",
+  "Employees": "1,541,000",
+  "Headquarters":"United States"
+},
+{
+  "id" :4,
+  "CompanyName":"Vitol",
+  "IndustryType": "Commodities",
+  "RevenueInUSD": "$505,000",
+  "Employees": "1,560",
+  "Headquarters":"Switzerland"
+}
+]
