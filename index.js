@@ -93,4 +93,5 @@ const server = http.createServer((req, res) => {
 const PORT= 1230;
 
 // port, callback
-server.listen(PORT,()=> console.log(`Great our server is running on port ${PORT} `));
+
+server.listen(PORT,()=> console.log(`Great our server is running on http://localhost:${PORT} `));
